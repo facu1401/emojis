@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App PWA de Emojis</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+
+</head>
+<body>
+
+ <main>
+    <section class="emoji-section" aria-labelledby="emojiHeading">
+      <h2 id="emojiHeading" class="visually-hidden">Emoji aleatorio</h2>
+      <div class="loader" id="loader" aria-hidden="true"></div>
+      <div id="emojiDisplay" class="emoji-display" role="img" aria-label="emoji aleatorio">🧐</div>
+      <p class="emoji-info" id="emojiInfo"></p>
+      <button type="button" class="app-button" id="reloadBtn">Otro emoji</button>
+      <p id="errorMsg" class="error-msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 App con Emojis</p>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
